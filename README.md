@@ -20,7 +20,7 @@ Example **To Do List**
 - [] any unordered or ordered list syntax is supported
 
 Note: HTML Cross out tags
-```html
+```HTML
 <del>brainstorming but not even tried</del>
 ```
 
