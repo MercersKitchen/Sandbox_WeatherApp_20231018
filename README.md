@@ -4,9 +4,9 @@ CS20 Project, No API Key in Public Domain
 --- 
 
 # To Do List
-- [] make a To Do List heading
+- [x] make a To Do List heading
 - [] add to do list items
-- [] this one is silly, I change my mind
+- [] <del>this one is silly, I change my mind</del>
 - [] 
 
 ---
