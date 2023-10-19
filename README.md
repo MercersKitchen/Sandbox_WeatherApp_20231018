@@ -5,6 +5,7 @@ CS20 Project, No API Key in Public Domain
 
 # To Do List
 - [x] make a To Do List heading
+- [x] My API Key is ... 
 - [] add to do list items
 - [] <del>this one is silly, I change my mind</del>
 - [] 
