@@ -4,10 +4,14 @@ CS20 Project, No API Key in Public Domain
 --- 
 
 # To Do List
+- [] make a To Do List heading
+- [] add to do list items
+- [] this one is silly, I change my mind
+- [] 
 
 ---
 
-#Exemplar To Do List
+# Exemplar To Do List
 
 Example **To Do List**
 - [] incomplete item
