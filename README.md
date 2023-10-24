@@ -8,7 +8,11 @@ CS20 Project, No API Key in Public Domain
 - [x] My API Key is ... 
 - [] add to do list items
 - [] <del>this one is silly, I change my mind</del>
-- [] 
+- [] Places: Edmonton, Calgary, Red Deer, Alberta
+- [] Quit Button is bottom right corner, last thing read
+- [] List of current weather features: 
+- [] List of forecast features and specific times in advance (hours, days) & reasons
+- [] DESCRIPTIONS of Case Study
 
 ---
 
