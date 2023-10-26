@@ -43,13 +43,13 @@ void buildingURL() {
   URLForecastCalgary = baseURL_ForecastWeather + place + calgary + and + apiKey + mode + unitMetric;
   URLForecastRedDeer = baseURL_ForecastWeather + place + redDeer + and + apiKey + mode + unitMetric;
   //
-  println(URLCurrentAlberta);
-  println(URLCurrentEdmonton);
-  println(URLCurrentCalgary);
-  println(URLCurrentRedDeer);
-  println(URLForecastAlberta);
-  println(URLForecastEdmonton);
-  println(URLForecastCalgary);
-  println(URLForecastRedDeer);
+  println("Current Alberta URL", URLCurrentAlberta);
+  println("Current Edmonton URL", URLCurrentEdmonton);
+  println("Current Calgary URL", URLCurrentCalgary);
+  println("Current Red Deer URL", URLCurrentRedDeer);
+  println("Forecast Alberta URL", URLForecastAlberta);
+  println("Forecast Edmonton URL", URLForecastEdmonton);
+  println("Forecast Calgary URL", URLForecastCalgary);
+  println("Forecast Red Deer URL", URLForecastRedDeer);
   //
 } //End Building URL
