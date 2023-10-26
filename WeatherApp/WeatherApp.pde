@@ -8,6 +8,7 @@
 void setup() {
   //Geometry
   buildingURL();
+  iconBuildingURL();
   //Population of Variables using Server from Sensor Data
   //DIV rect()
 }//End setup()
