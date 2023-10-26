@@ -29,7 +29,7 @@ void buildingURL() {
   String calgary  = "Calgary";
   String redDeer  = "Red Deer";
   //
-  String apiKey = "API Key Here"; //API Key is PRIVATE so not included here
+  String apiKey = "appid=[API Key Here]"; //API Key is PRIVATE so not included here
   String mode = "mode=json";
   String unitMetric = "units=metric";
   String and = "&";
@@ -38,8 +38,18 @@ void buildingURL() {
   URLCurrentEdmonton = baseURL_CurrentWeather + place + edmonton + and + apiKey + mode + unitMetric;
   URLCurrentCalgary = baseURL_CurrentWeather + place + calgary + and + apiKey + mode + unitMetric;
   URLCurrentRedDeer = baseURL_CurrentWeather + place + redDeer + and + apiKey + mode + unitMetric;
-  URLForecastAlberta = ;
-  URLForecastEdmonton = ;
-  URLForecastCalgary = ;
-  URLForecastRedDeer = ;
+  URLForecastAlberta = baseURL_ForecastWeather + place + alberta + and + apiKey + mode + unitMetric;
+  URLForecastEdmonton = baseURL_ForecastWeather + place + edmonton + and + apiKey + mode + unitMetric;
+  URLForecastCalgary = baseURL_ForecastWeather + place + calgary + and + apiKey + mode + unitMetric;
+  URLForecastRedDeer = baseURL_ForecastWeather + place + redDeer + and + apiKey + mode + unitMetric;
+  //
+  println(URLCurrentAlberta);
+  println(URLCurrentEdmonton);
+  println(URLCurrentCalgary);
+  println(URLCurrentRedDeer);
+  println(URLForecastAlberta);
+  println(URLForecastEdmonton);
+  println(URLForecastCalgary);
+  println(URLForecastRedDeer);
+  //
 } //End Building URL
