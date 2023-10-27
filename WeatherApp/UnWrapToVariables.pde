@@ -1,7 +1,12 @@
+//Global Variables
+//
+void unwrapToVariables() {
+} //End Unwrap To Variables
+
 //Unwrap To Variables
 /* Code to Copy, use println() to verify
  
- CAUTION: must verify JSON Object from Browser Console or JSON Lint (Browser) to 
+ CAUTION: must verify JSON Object from Browser Console or JSON Lint (Browser) to
  know the structure of how to unwrap varaibles. Examples are below
  
  Note: use APICall() Variables here, for example jsonCurrentAlberta
