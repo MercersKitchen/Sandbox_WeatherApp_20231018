@@ -24,32 +24,32 @@ void buildingURL() {
   String baseURL_ForecastWeather = domain + baseURL_data + forecastWeather;
   //
   String place = "q=";
-  String alberta = "Alberta";
-  String edmonton  = "Edmonton";
-  String calgary  = "Calgary";
-  String redDeer  = "Red Deer";
+  String alberta = "Alberta,CA"; //id=5883102
+  String edmonton  = "Edmonton,CA";
+  String calgary  = "Calgary,CA";
+  String redDeer  = "Red Deer,CA";
   //
-  String apiKey = "appid=[API Key Here]"; //API Key is PRIVATE so not included here
+  String apiKey = "APPID="; //API Key is PRIVATE so not included here
   String mode = "mode=json";
   String unitMetric = "units=metric";
   String and = "&";
   //
-  URLCurrentAlberta = baseURL_CurrentWeather + place + alberta + and + apiKey + mode + unitMetric;
-  URLCurrentEdmonton = baseURL_CurrentWeather + place + edmonton + and + apiKey + mode + unitMetric;
-  URLCurrentCalgary = baseURL_CurrentWeather + place + calgary + and + apiKey + mode + unitMetric;
-  URLCurrentRedDeer = baseURL_CurrentWeather + place + redDeer + and + apiKey + mode + unitMetric;
-  URLForecastAlberta = baseURL_ForecastWeather + place + alberta + and + apiKey + mode + unitMetric;
-  URLForecastEdmonton = baseURL_ForecastWeather + place + edmonton + and + apiKey + mode + unitMetric;
-  URLForecastCalgary = baseURL_ForecastWeather + place + calgary + and + apiKey + mode + unitMetric;
-  URLForecastRedDeer = baseURL_ForecastWeather + place + redDeer + and + apiKey + mode + unitMetric;
+  URLCurrentAlberta = baseURL_CurrentWeather + place + alberta + and + apiKey + and + mode + and + unitMetric;
+  URLCurrentEdmonton = baseURL_CurrentWeather + place + edmonton + and + apiKey + and + mode + and + unitMetric;
+  URLCurrentCalgary = baseURL_CurrentWeather + place + calgary + and + apiKey + and + mode + and + unitMetric;
+  URLCurrentRedDeer = baseURL_CurrentWeather + place + redDeer + and + apiKey + and + mode + and + unitMetric;
+  URLForecastAlberta = baseURL_ForecastWeather + place + alberta + and + apiKey + and + mode + and + unitMetric;
+  URLForecastEdmonton = baseURL_ForecastWeather + place + edmonton + and + apiKey + and + mode + and + unitMetric;
+  URLForecastCalgary = baseURL_ForecastWeather + place + calgary + and + apiKey + and + mode + and + unitMetric;
+  URLForecastRedDeer = baseURL_ForecastWeather + place + redDeer + and + apiKey + and + mode + and + unitMetric;
   //
   println("Current Alberta URL", URLCurrentAlberta);
-  println("Current Edmonton URL", URLCurrentEdmonton);
-  println("Current Calgary URL", URLCurrentCalgary);
-  println("Current Red Deer URL", URLCurrentRedDeer);
-  println("Forecast Alberta URL", URLForecastAlberta);
-  println("Forecast Edmonton URL", URLForecastEdmonton);
-  println("Forecast Calgary URL", URLForecastCalgary);
-  println("Forecast Red Deer URL", URLForecastRedDeer);
+  //println("Current Edmonton URL", URLCurrentEdmonton);
+  //println("Current Calgary URL", URLCurrentCalgary);
+  //println("Current Red Deer URL", URLCurrentRedDeer);
+  //println("Forecast Alberta URL", URLForecastAlberta);
+  //println("Forecast Edmonton URL", URLForecastEdmonton);
+  //println("Forecast Calgary URL", URLForecastCalgary);
+  //println("Forecast Red Deer URL", URLForecastRedDeer);
   //
 } //End Building URL

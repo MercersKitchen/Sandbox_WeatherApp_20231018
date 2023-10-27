@@ -9,6 +9,7 @@ void setup() {
   //Geometry
   buildingURL();
   iconBuildingURL();
+  APICall(URLCurrentAlberta);
   //Population of Variables using Server from Sensor Data
   //DIV rect()
 }//End setup()
@@ -19,6 +20,7 @@ void draw() {
 }//End draw()
 //
 void keyPressed() {
+  APICall(URLCurrentAlberta);
   // City Call, see procedure using Boolean & Button
   // Teacher Lessons
 }
