@@ -1,11 +1,17 @@
 //Global Variables
+int lat, lon;
 float tempAlberta, tempMinAlberta, tempMaxAlberta;
 //
 void APICall(String ServerCall) {
   println("Passed URL", ServerCall);
   JSONObject object = loadJSONObject( ServerCall );
   println("Object", object);
-  //JSONObject mainAlberta = object.getJSONObject("main"); //Unwrap {}
+  JSONObject coord = object.getJSONObject("coord"); //Unwrap {}
+  lat = coord.getInt("lat");
+  lon = coord.getInt("lon");
+  //
+  println("Coordinates", lat, lon);
+  //
   //tempAlberta = mainAlberta.getFloat("temp");
   //tempMinAlberta = mainAlberta.getFloat("temp_min");
   //tempMaxAlberta = mainAlberta.getFloat("temp_max");

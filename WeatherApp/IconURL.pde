@@ -1,3 +1,6 @@
+/*
+- Fix this
+
 String weatherIcon;
 //
 void iconBuildingURL() {
@@ -11,3 +14,4 @@ void iconBuildingURL() {
   weatherIcon = baseIconURL + icon + fileExtension;
   println(weatherIcon);
 } //End Icon Building URL
+*/

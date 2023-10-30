@@ -8,7 +8,6 @@
 void setup() {
   //Geometry
   buildingURL();
-  //iconBuildingURL();
   //Population of Variables using Server from Sensor Data
   //DIV rect()
 }//End setup()
@@ -19,11 +18,11 @@ void draw() {
 }//End draw()
 //
 void keyPressed() {
+  // City Call, see procedure using Boolean & Button
   if (key=='A' || key=='a') APICall(URLCurrentAlberta);
   if (key=='E' || key=='e') APICall(URLCurrentEdmonton);
   if (key=='C' || key=='c') APICall(URLCurrentCalgary);
   if (key=='R' || key=='r') APICall(URLCurrentRedDeer);
-  // City Call, see procedure using Boolean & Button
   // Teacher Lessons
 }
 //
