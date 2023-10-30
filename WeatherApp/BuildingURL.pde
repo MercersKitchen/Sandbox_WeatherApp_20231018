@@ -1,6 +1,6 @@
 /* API Call Based on
- - api.openweathermap.org/data/2.5/weather?q=London&appid={API key}
- - api.openweathermap.org/data/2.5/forecast?q=London&appid={API key}
+ - http://api.openweathermap.org/data/2.5/weather?q=Alberta,CA&APPID=[Key Hidden]&mode=json&units=metric
+ - http://api.openweathermap.org/data/2.5/forecast?q=Alberta,CA&APPID=[Key Hidden]&mode=json&units=metric
  */
 //
 //Global Variable
@@ -14,9 +14,7 @@ String URLForecastCalgary;
 String URLForecastRedDeer;
 //
 void buildingURL() {
-  // &appid={API key}
-  // &appid={API key}
-  String domain = "api.openweathermap.org"; //http vs. https, s for secure
+  String domain = "http://api.openweathermap.org"; //http vs. https, s for secure
   String baseURL_data = "/data/2.5/";
   String currentWeather = "weather?";
   String forecastWeather = "forecast?";
@@ -25,9 +23,9 @@ void buildingURL() {
   //
   String place = "q=";
   String alberta = "Alberta,CA"; //id=5883102
-  String edmonton  = "Edmonton,CA";
-  String calgary  = "Calgary,CA";
-  String redDeer  = "Red Deer,CA";
+  String edmonton = "Edmonton,CA";
+  String calgary = "Calgary,CA";
+  String redDeer = "Red Deer,CA";
   //
   String apiKey = "APPID="; //API Key is PRIVATE so not included here
   String mode = "mode=json";
@@ -44,12 +42,12 @@ void buildingURL() {
   URLForecastRedDeer = baseURL_ForecastWeather + place + redDeer + and + apiKey + and + mode + and + unitMetric;
   //
   println("Current Alberta URL", URLCurrentAlberta);
-  //println("Current Edmonton URL", URLCurrentEdmonton);
-  //println("Current Calgary URL", URLCurrentCalgary);
-  //println("Current Red Deer URL", URLCurrentRedDeer);
-  //println("Forecast Alberta URL", URLForecastAlberta);
-  //println("Forecast Edmonton URL", URLForecastEdmonton);
-  //println("Forecast Calgary URL", URLForecastCalgary);
-  //println("Forecast Red Deer URL", URLForecastRedDeer);
+  println("Current Edmonton URL", URLCurrentEdmonton);
+  println("Current Calgary URL", URLCurrentCalgary);
+  println("Current Red Deer URL", URLCurrentRedDeer);
+  println("Forecast Alberta URL", URLForecastAlberta);
+  println("Forecast Edmonton URL", URLForecastEdmonton);
+  println("Forecast Calgary URL", URLForecastCalgary);
+  println("Forecast Red Deer URL", URLForecastRedDeer);
   //
 } //End Building URL

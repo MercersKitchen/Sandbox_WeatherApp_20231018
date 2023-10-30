@@ -9,7 +9,7 @@ void setup() {
   //Geometry
   buildingURL();
   iconBuildingURL();
-  APICall(URLCurrentAlberta);
+  //APICall(URLCurrentAlberta);
   //Population of Variables using Server from Sensor Data
   //DIV rect()
 }//End setup()
