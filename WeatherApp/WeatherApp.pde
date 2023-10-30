@@ -19,7 +19,10 @@ void draw() {
 }//End draw()
 //
 void keyPressed() {
-  APICall(URLCurrentAlberta);
+  if (key=='A' || key=='a') APICall(URLCurrentAlberta);
+  if (key=='E' || key=='e') APICall(URLCurrentEdmonton);
+  if (key=='C' || key=='c') APICall(URLCurrentCalgary);
+  if (key=='R' || key=='r') APICall(URLCurrentRedDeer);
   // City Call, see procedure using Boolean & Button
   // Teacher Lessons
 }
