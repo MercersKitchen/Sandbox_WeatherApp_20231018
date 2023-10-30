@@ -5,10 +5,10 @@ void APICall(String ServerCall) {
   println("Passed URL", ServerCall);
   JSONObject object = loadJSONObject( ServerCall );
   println("Object", object);
-  JSONObject mainAlberta = object.getJSONObject("main"); //Unwrap {}
-  tempAlberta = mainAlberta.getFloat("temp");
-  tempMinAlberta = mainAlberta.getFloat("temp_min");
-  tempMaxAlberta = mainAlberta.getFloat("temp_max");
+  //JSONObject mainAlberta = object.getJSONObject("main"); //Unwrap {}
+  //tempAlberta = mainAlberta.getFloat("temp");
+  //tempMinAlberta = mainAlberta.getFloat("temp_min");
+  //tempMaxAlberta = mainAlberta.getFloat("temp_max");
 } //End API Call
 //
 void unwrapToVariables() {

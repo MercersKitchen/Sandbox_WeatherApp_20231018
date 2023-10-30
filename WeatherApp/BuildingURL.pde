@@ -15,19 +15,21 @@ String URLForecastRedDeer;
 //
 void buildingURL() {
   String domain = "http://api.openweathermap.org"; //http vs. https, s for secure
-  String baseURL_data = "/data/2.5/";
+  String baseURL_data = "/data/2.5/"; //Legacy JSON CAll, current is 4.0 using LAT LON
   String currentWeather = "weather?";
   String forecastWeather = "forecast?";
   String baseURL_CurrentWeather = domain + baseURL_data + currentWeather;
   String baseURL_ForecastWeather = domain + baseURL_data + forecastWeather;
   //
+  // NOTE: godMode is typing the [PLACE,COUNTRY] into the app
   String place = "q=";
-  String alberta = "Alberta,CA"; //id=5883102
-  String edmonton = "Edmonton,CA";
+  String alberta = "Alberta,CA"; //using COUNTRY since Alberta,US exists
+  String edmonton = "Edmonton,CA"; //using COUNTRY since Edmonton,US exists
   String calgary = "Calgary,CA";
   String redDeer = "Red Deer,CA";
   //
   String apiKey = "APPID="; //API Key is PRIVATE so not included here
+  //APPID might need to be uppercase
   String mode = "mode=json";
   String unitMetric = "units=metric";
   String and = "&";
