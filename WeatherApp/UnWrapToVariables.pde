@@ -1,20 +1,45 @@
 //Global Variables
-int lat, lon;
-float tempAlberta, tempMinAlberta, tempMaxAlberta;
+String name, country, icon, mainWeather, description;
+int lat, lon, sunrise, sunset, timeCall;
+float temp, feelsLike, tempMin, tempMax;
+int humidity, pressure, seaLevel;
 //
 void APICall(String ServerCall) {
-  println("Passed URL", ServerCall);
   JSONObject object = loadJSONObject( ServerCall );
-  println("Object", object);
   JSONObject coord = object.getJSONObject("coord"); //Unwrap {}
   lat = coord.getInt("lat");
   lon = coord.getInt("lon");
   //
-  println("Coordinates", lat, lon);
+  JSONObject main = object.getJSONObject("main"); //Unwrap {}
+  temp = main.getFloat("temp");
+  feelsLike = main.getFloat("feels_like");
+  tempMin = main.getFloat("temp_min");
+  tempMax = main.getFloat("temp_max");
+  humidity = main.getInt("humidity");
+  pressure = main.getInt("pressure");
+  //seaLevel = main.getInt("sea_level");
+  JSONObject sys = object.getJSONObject("sys"); //Unwrap {}
+  country = sys.getString("country");
+  sunrise = sys.getInt("sunrise");
+  sunset = sys.getInt("sunset");
   //
-  //tempAlberta = mainAlberta.getFloat("temp");
-  //tempMinAlberta = mainAlberta.getFloat("temp_min");
-  //tempMaxAlberta = mainAlberta.getFloat("temp_max");
+  JSONArray weather = object.getJSONArray("weather"); //Unwrap {}
+  JSONObject weatherObject = weather.getJSONObject(0); //Unwrap {}
+  icon = weatherObject.getString("icon");
+  mainWeather = weatherObject.getString("main");
+  description = weatherObject.getString("description");
+  //
+  name = object.getString("name"); //Unwrap {}
+  timeCall = object.getInt("dt"); //Unwrap {}
+  //
+  println("Passed URL", ServerCall);
+  println("Object", object);
+  println( name, country, timeCall );
+  println("Coordinates", lat, lon);
+  println( "Sunrise/Sunset", sunrise, sunset );
+  println( "Temperature:", temp, "\tFeels Like:", feelsLike, "\tMin/Mas:", tempMin, tempMax );
+  println( icon, mainWeather, description );
+  //
 } //End API Call
 //
 void unwrapToVariables() {

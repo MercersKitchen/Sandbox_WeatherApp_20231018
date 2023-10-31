@@ -23,8 +23,8 @@ void buildingURL() {
   //
   // NOTE: godMode is typing the [PLACE,COUNTRY] into the app
   String place = "q=";
-  String alberta = "Alberta,CA"; //using COUNTRY since Alberta,US exists
-  String edmonton = "Edmonton,CA"; //using COUNTRY since Edmonton,US exists
+  String alberta = "Alberta,CA"; //using COUNTRY since Alberta, US exists
+  String edmonton = "Edmonton,CA"; //using COUNTRY since Edmonton, US exists
   String calgary = "Calgary,CA";
   String redDeer = "Red Deer,CA";
   //
