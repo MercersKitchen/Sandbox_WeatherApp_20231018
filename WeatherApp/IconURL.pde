@@ -1,17 +1,21 @@
-/*
-- Fix this
-
-String weatherIcon;
+/* Uses API Call (UnWrapToVariables) to draw image
+ - See void setup(), keyPressed(), draw() {}
+ */
+String weatherIconSetup;
+String weatherIconString;
 //
-void iconBuildingURL() {
-  //https://openweathermap.org/img/wn/01d@2x.png
-  String baseIconURL = "https://openweathermap.org/img/wn/";
-  //
-  //CAUTION: Populated from JSON, below is testing only
-  String icon = "13d"; //Key Value from JSON
-  String fileExtension = "@2x.png";
-  //
-  weatherIcon = baseIconURL + icon + fileExtension;
-  println(weatherIcon);
-} //End Icon Building URL
-*/
+//Hardcoded Strings for ICON API Calling
+//https://openweathermap.org/img/wn/01d@2x.png
+String baseIconURL = "https://openweathermap.org/img/wn/";
+String sun = "01d";
+String fileExtension = "@2x.png";
+//
+void iconBuildingURLSetup() {
+  weatherIconSetup = baseIconURL + sun + fileExtension;
+  weatherIconImage = loadImage(weatherIconSetup);
+} //End Icon Building URL Setup
+//
+void iconBuildingURLKeyPressed() {
+  weatherIconString = baseIconURL + icon + fileExtension;
+} //End Icon Building URL KeyPressed
+//
