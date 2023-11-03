@@ -28,7 +28,7 @@ void buildingURL() {
   String calgary = "Calgary,CA";
   String redDeer = "Red Deer,CA";
   //
-  String apiKey = "APPID=06ee4dfaf9a7c9bdf9024604eda99160"; //API Key is PRIVATE so not included here
+  String apiKey = "APPID="; //API Key is PRIVATE so not included here
   //APPID might need to be uppercase
   String mode = "mode=json";
   String unitMetric = "units=metric";
