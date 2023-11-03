@@ -1,3 +1,6 @@
+//Libraries
+import java.util.Date; //Date Conversion Tool, UNIX Time Stamp from January 1, 1970 to the DT Value
+//
 //Global Variables
 String name, country, icon, mainWeather, description;
 int lat, lon, sunrise, sunset, timeCall;
@@ -32,6 +35,7 @@ void APICall(String ServerCall) {
   name = object.getString("name"); //Unwrap {}
   timeCall = object.getInt("dt"); //Unwrap {}
   //
+  //Current Weather
   println("Passed URL", ServerCall);
   println("Object", object);
   println( name, country, timeCall );
