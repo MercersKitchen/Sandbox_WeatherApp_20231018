@@ -46,9 +46,9 @@ void APICall(String ServerCall) {
   //Current Weather
   println("Passed URL", ServerCall);
   println("Object", object);
-  println( name, country, timeCall );
+  println( name, country, humanDate(timeCall) );
   println("Coordinates", lat, lon);
-  println( "Sunrise/Sunset", sunrise, sunset );
+  println( "Sunrise/Sunset", humanDate(sunrise), humanDate(sunset) );
   println( "Temperature:", temp, "\tFeels Like:", feelsLike, "\tMin/Mas:", tempMin, tempMax );
   println( icon, mainWeather, description );
   //
