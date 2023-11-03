@@ -6,6 +6,14 @@ String name, country, icon, mainWeather, description;
 int lat, lon, sunrise, sunset, timeCall;
 float temp, feelsLike, tempMin, tempMax;
 int humidity, pressure, seaLevel;
+Date apiCurrentDateCall; //Variable ... holds all date functions, see Internet
+//
+//General Procedure used anytime
+Date humanDate(long unixTime) {
+  Date dateHuman = new Date(unixTime*1000);
+  return dateHuman;
+}// End Date
+
 //
 void APICall(String ServerCall) {
   JSONObject object = loadJSONObject( ServerCall );
