@@ -1,6 +1,5 @@
 /* Open Weather Map App: Reminders, BUGs and ToDos
 - ICON Notes
-
 */
 //
 //Libraries and Dependancies
@@ -14,7 +13,7 @@ void setup() {
   iconBuildingURLSetup(); //Note: encapuslated loading weatherIconImage
   //CAUTION: must answer, what place does the Weather App automatically 
   // Populate variables from?
-  // APICall(URLCurrentEdmonton)
+  currentAPICall(URLCurrentEdmonton);
   //Population of Variables using Server from Sensor Data
   //DIV rect()
 }//End setup()
@@ -30,10 +29,15 @@ void draw() {
 //
 void keyPressed() {
   // City Call, see procedure using Boolean & Button
-  if (key=='A' || key=='a') APICall(URLCurrentAlberta);
-  if (key=='E' || key=='e') APICall(URLCurrentEdmonton);
-  if (key=='C' || key=='c') APICall(URLCurrentCalgary);
-  if (key=='R' || key=='r') APICall(URLCurrentRedDeer);
+  if (key=='A' || key=='a') currentAPICall(URLCurrentAlberta);
+  if (key=='E' || key=='e') currentAPICall(URLCurrentEdmonton);
+  if (key=='C' || key=='c') currentAPICall(URLCurrentCalgary);
+  if (key=='R' || key=='r') currentAPICall(URLCurrentRedDeer);
+  //
+  //if (key=='S' || key=='s') forecastAPICall(URLForecastAlberta);
+  //if (key=='D' || key=='d') forecastAPICall(URLForecastEdmonton);
+  //if (key=='V' || key=='v') forecastAPICall(URLForecastCalgary);
+  //if (key=='F' || key=='f') forecastAPICall(URLForecastRedDeer);
   //
   // Loading Weather Icon based on which key was pressed
   iconBuildingURLKeyPressed();

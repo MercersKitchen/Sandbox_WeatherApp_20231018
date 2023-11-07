@@ -15,7 +15,7 @@ Date humanDate(long unixTime) {
 }// End Date
 
 //
-void APICall(String ServerCall) {
+void currentAPICall(String ServerCall) {
   JSONObject object = loadJSONObject( ServerCall );
   JSONObject coord = object.getJSONObject("coord"); //Unwrap {}
   lat = coord.getInt("lat");
