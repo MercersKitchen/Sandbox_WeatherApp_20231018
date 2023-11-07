@@ -34,10 +34,10 @@ void keyPressed() {
   if (key=='C' || key=='c') currentAPICall(URLCurrentCalgary);
   if (key=='R' || key=='r') currentAPICall(URLCurrentRedDeer);
   //
-  //if (key=='S' || key=='s') forecastAPICall(URLForecastAlberta);
-  //if (key=='D' || key=='d') forecastAPICall(URLForecastEdmonton);
-  //if (key=='V' || key=='v') forecastAPICall(URLForecastCalgary);
-  //if (key=='F' || key=='f') forecastAPICall(URLForecastRedDeer);
+  if (key=='S' || key=='s') forecastAPICall(URLForecastAlberta);
+  if (key=='D' || key=='d') forecastAPICall(URLForecastEdmonton);
+  if (key=='V' || key=='v') forecastAPICall(URLForecastCalgary);
+  if (key=='F' || key=='f') forecastAPICall(URLForecastRedDeer);
   //
   // Loading Weather Icon based on which key was pressed
   iconBuildingURLKeyPressed();
